@@ -82,8 +82,6 @@ where
 
 
 
-
-
 // so now if T implements Reader trait, we can call read method on the StreamHandle
 struct StreamHandle<T> {
     stream: T
@@ -95,7 +93,6 @@ impl<T: Reader> StreamHandle<T> {
         return String::from("some data from a file")
     }
 }
-
 
 
 
